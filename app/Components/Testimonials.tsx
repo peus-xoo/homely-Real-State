@@ -20,7 +20,7 @@ const testimonials = [
         text: "Finding the perfect property has never been easier. The team was helpful, professional, and made every step of the journey feel effortless.",
         name: "Sarah Williams",
         status: "Buyer",
-        image: "/cuple3.jpg",
+        image: "/Cuple3.jpg",
     },
 ];
 
