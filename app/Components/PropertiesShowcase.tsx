@@ -53,7 +53,7 @@ export default function PropertyShowcase() {
                 {/* Large featured */}
                 <div className="group relative col-span-12 h-72 overflow-hidden rounded-xl sm:h-80 md:col-span-6 md:h-[26rem] lg:h-[30rem] xl:h-[34rem]">
                     <img
-                        src="/Second.jpg"
+                        src="/second.jpg"
                         alt="Luxury villa"
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
