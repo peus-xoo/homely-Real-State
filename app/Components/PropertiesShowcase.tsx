@@ -82,7 +82,7 @@ export default function PropertyShowcase() {
 
                 {/* Two tall images */}
                 <div className="col-span-6 h-52 overflow-hidden rounded-xl sm:h-72 md:col-span-3 md:h-[26rem] lg:h-[30rem] xl:h-[34rem]">
-                    <img src="/third.jpg" alt="Third property" className="h-full w-full object-cover" />
+                    <img src="/Third (2).jpg" alt="Third property" className="h-full w-full object-cover" />
                 </div>
 
                 <div className="col-span-6 h-52 overflow-hidden rounded-xl sm:h-72 md:col-span-3 md:h-[26rem] lg:h-[30rem] xl:h-[34rem]">
