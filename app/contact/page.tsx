@@ -1,0 +1,1 @@
+export default function ContactUs() {    return (        <main className="bg-black">            <h1>Contact Us</h1>            <p>Get in touch with our team.</p>        </main>    );}

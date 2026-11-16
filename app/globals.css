@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* ---------- Theme ---------- */
+@theme {
+    /* adds `xs:` → xs 480 | sm 640 | md 768 | lg 1024 | xl 1280 | 2xl 1536 */
+    --breakpoint-xs: 30rem;
+    --font-sans: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ---------- Base ---------- */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Older Edge */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #111111; /* was #fff (white on white); sections set their own colors */
+    font-family: var(--font-sans);
+    overflow-x: clip; /* no accidental sideways scroll on mobile */
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ---------- Layout ---------- */
+
+/* Shared page container: max 1440px, fluid side padding (~18px mobile → 80px wide) */
+@utility container-x {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 90rem;
+    padding-inline: clamp(1rem, 0.4rem + 3vw, 5rem);
+}
+
+/* Shared vertical rhythm for every section (56px → 120px) */
+@utility section-y {
+    padding-block: clamp(3.5rem, 2rem + 6vw, 7.5rem);
+}
+
+/* ---------- Fluid type scale ---------- */
+@utility type-display {
+    font-size: clamp(2.5rem, 1.2rem + 6vw, 6.5rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
+}
+@utility type-h2 {
+    font-size: clamp(1.875rem, 1.25rem + 2.4vw, 3.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+}
+@utility type-h3 {
+    font-size: clamp(1.125rem, 1rem + 0.6vw, 1.5rem);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+}
+@utility type-lead {
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
+    line-height: 1.6;
+}
+@utility type-body {
+    font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1.0625rem);
+    line-height: 1.65;
+}
+@utility type-small {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+@utility type-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1.125rem);
+    font-weight: 500;
+}
