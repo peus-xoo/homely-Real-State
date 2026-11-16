@@ -9,7 +9,7 @@ const properties = [
     { name: "Modern Luxe Villa", address: "20 S Aurora Ave, Miami", price: "$1,200,000", img: "/ModernLuxury.jpg", beds: 1, baths: 2, area: 240 },
     { name: "Royal Orchid Villas", address: "12 Emerald Heights, LA", price: "$780,000", img: "/RoyalOrchid.jpg", beds: 3, baths: 4, area: 180 },
     { name: "Grand Vista Villas", address: "25 Skyline Boulevard, SD", price: "$710,000", img: "/GrandVista.jpg", beds: 3, baths: 3, area: 170 },
-    { name: "Imperial Pearl Villas", address: "18 Sapphire Bay Road, NS", price: "$630,000", img: "/Imperial pear.jpg", beds: 4, baths: 2, area: 134 },
+    { name: "Imperial Pearl Villas", address: "18 Sapphire Bay Road, NS", price: "$630,000", img: "/imperial pear.jpg", beds: 4, baths: 2, area: 134 },
 ];
 
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? "" : "s"}`;
