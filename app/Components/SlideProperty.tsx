@@ -62,7 +62,7 @@ export default function SlideProperty() {
                         aria-label="Previous image"
                         className="absolute left-3 top-1/2 -translate-y-1/2 cursor-pointer md:left-4 [&>img]:h-9 [&>img]:w-9 md:[&>img]:h-11 md:[&>img]:w-11"
                     >
-                        <img src="/Frame 412.jpg" alt="" />
+                        <img src="/Frame 412.png" alt="" />
                     </button>
 
                     <button
@@ -71,7 +71,7 @@ export default function SlideProperty() {
                         aria-label="Next image"
                         className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer md:right-4 [&>img]:h-9 [&>img]:w-9 md:[&>img]:h-11 md:[&>img]:w-11"
                     >
-                        <img src="/Frame 413.jpg" alt="" />
+                        <img src="/Frame 413.png" alt="" />
                     </button>
                 </div>
 
